@@ -1,0 +1,13 @@
+%text {
+  font-family: $ffmain;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+%input {
+  width: 100%;
+  height: 56px;
+  border: 1px solid $placeholder-color;
+  border-radius: 12px;
+}

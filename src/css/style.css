@@ -1,0 +1,342 @@
+.input-number, .quantity, .amount, .price, .goods__name, .continue, .contact__input::placeholder, .contact__input, .contact__label, .subtitle, .header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.input-number, .quantity, .contact__input {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1002px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.start {
+  align-items: flex-start;
+}
+
+.header {
+  padding-top: 64px;
+  color: #4e5150;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: #333333;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.survey {
+  flex: 0 1 48%;
+  margin-bottom: 40px;
+}
+
+.contact__label {
+  color: #4f4f4f;
+  font-size: 12px;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+.contact__label_check {
+  margin-top: 0;
+}
+.contact__input {
+  color: #333333;
+  font-size: 16px;
+  margin-top: 7px;
+  padding: 18px 52px 18px;
+}
+.contact__input_mail {
+  background: url("../assets/mail.svg") left center/cover no-repeat;
+  background-size: 25px;
+  background-position: 9px 14px;
+}
+.contact__input_call {
+  background: url("../assets/call.svg") left center/cover no-repeat;
+  background-size: 25px;
+  background-position: 9px 14px;
+}
+.contact__input_person {
+  background: url("../assets/person.svg") left center/cover no-repeat;
+  background-size: 25px;
+  background-position: 9px 14px;
+}
+.contact__input_address {
+  background: url("../assets/home.svg") left center/cover no-repeat;
+  background-size: 25px;
+  background-position: 9px 14px;
+}
+.contact__input_city {
+  background: url("../assets/city.svg") left center/cover no-repeat;
+  background-size: 25px;
+  background-position: 9px 14px;
+}
+.contact__input_country {
+  background: url("../assets/country.svg") left center/cover no-repeat;
+  background-size: 25px;
+  background-position: 9px 14px;
+}
+.contact__input_postal {
+  background: url("../assets/mailbox.svg") left center/cover no-repeat;
+  background-size: 25px;
+  background-position: 9px 14px;
+}
+.contact__input::placeholder {
+  color: #828282;
+  font-size: 16px;
+}
+.contact__input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template: auto/repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.continue {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 23px;
+  align-self: flex-end;
+  height: 56px;
+  padding: 18px;
+  background-color: #f2994a;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.cart {
+  flex: 0 1 40%;
+  margin-top: 50px;
+  padding: 30px;
+  min-height: 535px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+}
+
+.bin {
+  height: 330px;
+}
+.goods {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 35px;
+}
+.goods__img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.goods__info {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.goods__name {
+  color: #4e5150;
+  font-size: 16px;
+}
+.goods__price {
+  margin-top: 15px;
+}
+
+.price {
+  color: #4e5150;
+  font-size: 10px;
+}
+.price__new {
+  font-size: 14px;
+  color: #f2994a;
+}
+.price__old {
+  text-decoration: line-through;
+}
+
+.amount {
+  height: 80px;
+  width: 100%;
+  color: #333333;
+  font-size: 18px;
+}
+
+.cost {
+  width: 100%;
+  position: relative;
+}
+.cost:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #828282;
+}
+
+.quantity {
+  color: #333333;
+  font-size: 16px;
+  padding: 18px 52px;
+}
+
+/* input type number */
+.input-number {
+  color: #333333;
+  font-size: 16px;
+  background: #f2f2f2;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.input-number__input {
+  background: #f2f2f2;
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 12px;
+  text-align: center;
+}
+
+.input-number__minus,
+.input-number__plus {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 24px;
+  background-color: #828282;
+  border-radius: 4px;
+}
+
+/* /input type number */
+@media (max-width: 767px) {
+  .main {
+    flex-direction: column;
+  }
+  .cart {
+    order: 1;
+  }
+  .survey {
+    order: 2;
+  }
+  .bin {
+    flex-direction: row;
+    height: 650px;
+  }
+}
+@media (max-width: 576px) {
+  .goods {
+    grid-template: repeat(3, auto)/1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+  .goods__img {
+    max-width: 135px;
+    max-height: 135px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0 auto;
+  }
+  .goods__info {
+    grid-row: 2/2;
+    grid-column: 1/2;
+  }
+  .goods__name {
+    text-align: center;
+  }
+  .container {
+    min-width: 280px;
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
